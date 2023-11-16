@@ -4,10 +4,10 @@ const userInput = prompt('Input your favorite froyo flavors separated by commas'
 //create array of inputs
 const inputString = (userInput.split(","));
 
-function countFlavors(obj){
+function countFlavors(stringArray){
     const orders={};
-    for(i=0;i<inputString.length;i++){
-        let flavor=inputString[i];
+    for(i=0;i<stringArray.length;i++){
+        let flavor=stringArray[i];
         if(orders[flavor]){
             orders[flavor] +=1
         } else {
